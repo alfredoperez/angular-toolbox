@@ -1,0 +1,23 @@
+{
+    "name": "angular-toolbox",
+    "displayName": "Angular Toolbox",
+    "description": "Toolbox full of extensions to develop awesome Angular applications.",
+    "version": "0.0.1",
+    "publisher": "Alfredo",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alfredoperez/angular-toolbox/.git"
+    },
+    "bugs": {
+        "url": "https://github.com/alfredoperez/angular-toolbox/issues"
+    },
+    "homepage": "https://github.com/alfredoperez/angular-toolbox/#readme",
+    "extensionDependencies": []
+}
