@@ -5,11 +5,20 @@
     "version": "0.0.1",
     "publisher": "Alfredo",
     "license": "MIT",
+    "keywords": [
+        "Angular",
+        "Angular 2",
+        "Angular 4",
+        "TypeScript",
+        "HTML",
+        "Extension Packs"
+    ],
     "engines": {
         "vscode": "^1.16.0"
     },
     "categories": [
-        "Extension Packs"
+        "Extension Packs",
+        "Other"
     ],
     "repository": {
         "type": "git",
@@ -19,5 +28,28 @@
         "url": "https://github.com/alfredoperez/angular-toolbox/issues"
     },
     "homepage": "https://github.com/alfredoperez/angular-toolbox/#readme",
-    "extensionDependencies": []
+    "extensionDependencies": [
+        "johnpapa.Angular2",
+        "Mikael.angular-beastcode",
+        "Angular.ng-template",
+        "SimonTest.simontest",
+        "alexiv.vscode-angular2-files",
+
+        "ionutvmi.path-autocomplete",
+        "pmneo.tsimporter",
+        "rbbit.typescript-hero",
+        "joelday.docthis",
+        "stringham.move-ts",
+
+        "HookyQR.beautify",
+        "eg2.tslint",
+        "shinnn.stylelint",
+        "mkaufman.htmlhint",
+
+        "formulahendry.auto-rename-tag",
+        "CoenraadS.bracket-pair-colorizer",
+        "IBM.output-colorizer",
+        "wayou.vscode-todo-highlight",
+        "minhthai.vscode-todo-parser"
+    ]
 }
