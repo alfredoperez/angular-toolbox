@@ -25,11 +25,11 @@ It has configurations to follow Angular Style Guide and even the style lint conf
 ---
 ### Linters
 
-**[TS Lint]()**
+**[TS Lint](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/tslint.json)**
 
  These rules are set to enforce a consistent code style for Angular development. This were copied from [ng-seed/angular-tslint-rules](https://github.com/ng-seed/angular-tslint-rules)
 
-**[Style Lint]()**
+**[Style Lint](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/stylelint/.stylelintrc)**
 
 These rules are the ones that the Angular Material team uses. This were copied from [angular/material2](https://github.com/angular/material2).
 
@@ -38,18 +38,18 @@ To enable it,  Copy the contents of resources/stylelint to the root of your proj
   npm install --save-dev stylelint
   ```
 
-**[HTMLHint]()**
+**[HTMLHint](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.htmlhintrc)**
 
 These rules are set to ensure consistency and clean code in the HTML files. To use this extension install the HTMLHint globally.
   ```
   npm install --global HTMLHint
   ```
 
-**[Beautify]()**
+**[Beautify](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.jsbeautifyrc)**
 
 Set of rules to Beautify javascript, JSON, CSS, Sass, and HTML.
 
-**[VS Code Settings]()**
+**[VS Code Settings](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.vscodesettings)**
 
 An example of VS Code IDE Settings, to enable and configure the extensions installed
 
