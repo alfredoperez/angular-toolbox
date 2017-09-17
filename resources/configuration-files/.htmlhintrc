@@ -1,0 +1,18 @@
+ {
+     "tagname-lowercase": true,
+     "attr-lowercase": [
+         "fxLayout",
+         "routerLink",
+         "*ngIf",
+         "*ngFor",
+         "formControlName",
+         "(ngSubmit)",
+         "[formGroup]",
+         "[ngClass]"
+     ],
+     "class-no-dup": true,
+     "attr-value-double-quotes": false,
+     "id-unique": true,
+     "src-not-empty": true,
+     "attr-no-duplication": true
+ }
