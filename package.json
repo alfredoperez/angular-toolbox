@@ -2,7 +2,7 @@
     "name": "angular-toolbox",
     "displayName": "Angular Toolbox",
     "description": "Toolbox full of extensions to develop awesome Angular applications.",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "publisher": "alfredoperez",
     "icon": "icon.png",
     "license": "MIT",
