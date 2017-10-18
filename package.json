@@ -2,7 +2,7 @@
     "name": "angular-toolbox",
     "displayName": "Angular Toolbox - Extension Pack",
     "description": "Toolbox full of extensions to develop awesome Angular applications.",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "publisher": "alfredoperez",
     "icon": "icon.png",
     "license": "MIT",
@@ -35,7 +35,6 @@
         "alexiv.vscode-angular2-files",
 
         "ionutvmi.path-autocomplete",
-        "pmneo.tsimporter",
         "rbbit.typescript-hero",
         "joelday.docthis",
         "stringham.move-ts",
@@ -43,7 +42,6 @@
         "HookyQR.beautify",
         "eg2.tslint",
         "shinnn.stylelint",
-        "mkaufman.htmlhint",
 
         "formulahendry.auto-rename-tag",
         "CoenraadS.bracket-pair-colorizer",

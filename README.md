@@ -11,14 +11,14 @@ It has configurations to follow Angular Style Guide and even the style lint conf
 
 # Table of Contents
 
-    - [Configuration Files](#configuration-files)
-        - [Linters](#linters)
-        - [Extra](#extra)
-    - [Extensions](#extensions)
-        - [Angular](#angular)
-        - [TypeScript](#typescript)
-        - [Code Style and Linters](#code-style-and-linters)
-        - [Tools](#tools)
+  - [Configuration Files](#configuration-files)
+      - [Linters](#linters)
+      - [Extra](#extra)
+  - [Extensions](#extensions)
+      - [Angular](#angular)
+      - [TypeScript](#typescript)
+      - [Code Style and Linters](#code-style-and-linters)
+      - [Tools](#tools)
 ---
 
 ## Configuration Files
@@ -36,13 +36,6 @@ These rules are the ones that the Angular Material team uses. This were copied f
 To enable it,  Copy the contents of resources/stylelint to the root of your project and then install stylelint in your project:
   ```
   npm install --save-dev stylelint
-  ```
-
-**[HTMLHint](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.htmlhintrc)**
-
-These rules are set to ensure consistency and clean code in the HTML files. To use this extension install the HTMLHint globally.
-  ```
-  npm install --global HTMLHint
   ```
 
 **[Beautify](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.jsbeautifyrc)**
@@ -79,8 +72,6 @@ An example of VS Code IDE Settings, to enable and configure the extensions insta
 
 ### TypeScript
 
-- [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete)
-- [TypeScript Importer](https://marketplace.visualstudio.com/items?itemName=pmneo.tsimporter)
 - [TypeScript  Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero)
 - [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis)
 - [Move TS](https://marketplace.visualstudio.com/items?itemName=stringham.move-ts)

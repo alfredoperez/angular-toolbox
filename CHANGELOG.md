@@ -1,7 +1,8 @@
-# Change Log
-All notable changes to the "angular-toolbox" extension will be documented in this file.
+## Angular Toolbox Changelog
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+<a name="1.1.1"></a>
+# 1.1.1 (2017-10-18)
 
-## [Unreleased]
-- Initial release
+* Removed Typescript Importer
+* Removed Path Autocomplete
+* Removed HTML Hint
