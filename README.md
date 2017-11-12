@@ -7,44 +7,88 @@
 
 This extension pack contains a collection of extensions and configurations to ensure code quality and consistency.
 
-It has configurations to follow Angular Style Guide and even the style lint configuration that the Angular Material team uses.
+It has configurations to follow **Angular Style Guide** and even the style lint configuration that the **Angular Material team** uses.
 
-# Table of Contents
-
-  - [Configuration Files](#configuration-files)
-      - [Linters](#linters)
-      - [Extra](#extra)
-  - [Extensions](#extensions)
-      - [Angular](#angular)
-      - [TypeScript](#typescript)
-      - [Code Style and Linters](#code-style-and-linters)
-      - [Tools](#tools)
----
-
-## Configuration Files
----
 ### Linters
 
 **[TS Lint](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/tslint.json)**
 
  These rules are set to enforce a consistent code style for Angular development. This were copied from [ng-seed/angular-tslint-rules](https://github.com/ng-seed/angular-tslint-rules)
 
+ Make sure to add your selector to the directive-selector, component-selector and pipe-naming in the tslint.json file:
+```
+"directive-selector": [
+  true,
+  "attribute", [
+  "ngx",
+  "test"
+  ],
+  "camelCase"
+],
+"component-selector": [
+  true,
+  "element", [
+    "ngx",
+    "test"
+    ],
+  "kebab-case"
+],
+
+"pipe-naming": [
+  true,
+  "camelCase",
+  "ngx"
+],
+```
+
+
 **[Style Lint](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/stylelint/.stylelintrc)**
 
 These rules are the ones that the Angular Material team uses. This were copied from [angular/material2](https://github.com/angular/material2).
 
-To enable it,  Copy the contents of resources/stylelint to the root of your project and then install stylelint in your project:
+To enable it:  
+* Install stylelint in your project:
   ```
   npm install --save-dev stylelint
   ```
-
+* Copy the contents of resources/stylelint to the root of your project 
+* Also, you can set the following configuration for Visual Studio Code to enable autosave
+  
+   ```
+  "tslint.autoFixOnSave": true,
+  "tslint.enable": false
+   ```
 **[Beautify](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.jsbeautifyrc)**
 
-Set of rules to Beautify javascript, JSON, CSS, Sass, and HTML.
+This file has a set of rules to Beautify javascript, JSON, CSS, Sass, and HTML.
 
-**[VS Code Settings](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.vscodesettings)**
+---
+### Angular
+- [Angular v4 TypeScript Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
 
-An example of VS Code IDE Settings, to enable and configure the extensions installed
+- [Angular 2+ Snippets - TypeScript, Html, ngRx, Angular Flex Layout & Testing](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+ 
+  Settings: 
+    ```
+    editor.snippetSuggestions": "top"
+    ```
+
+- [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+
+
+- [SimonTest](https://marketplace.visualstudio.com/items?itemName=SimonTest.simontest)
+
+It analyzes your code and creates the necessary stubs, configures the TestBed, and it even generates tests for you.
+
+- [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files)
+
+### TypeScript
+
+- [TypeScript  Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero)
+
+- [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis)
+
+- [Move TS](https://marketplace.visualstudio.com/items?itemName=stringham.move-ts)
 
 ### Extra 
 
@@ -56,66 +100,14 @@ An example of VS Code IDE Settings, to enable and configure the extensions insta
 "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace"
 ```
 
-## Extensions
----
-### Angular
-- [Angular v4 TypeScript Snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
-- [Angular 2+ Snippets - TypeScript, Html, ngRx, Angular Flex Layout & Testing](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
- 
-  Settings: 
-    ```
-    editor.snippetSuggestions": "top"
-    ```
-- [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
-- [SimonTest](https://marketplace.visualstudio.com/items?itemName=SimonTest.simontest)
-- [Angular Files](https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files)
+**[VS Code Settings](https://github.com/alfredoperez/angular-toolbox/blob/master/resources/configuration-files/.vscodesettings)**
 
-### TypeScript
+This file is an example of VS Code IDE Settings, that helps to enable and configure the extensions installed
 
-- [TypeScript  Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero)
-- [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis)
-- [Move TS](https://marketplace.visualstudio.com/items?itemName=stringham.move-ts)
+### Other Extensions 
 
-### Code Style and Linters
-
-- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
-- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
- 
-  Settings: 
-   ```
-  "tslint.autoFixOnSave": true,
-  "tslint.enable": false
-     ```
-- [StyleLint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
-
- ***NOTE: This extension requires stylelint in your project. Install with the following command:
-  ```
-  npm install --save-dev stylelint
-  ```
-
-- [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
- 
- ***NOTE: This extension requires HTMLHint. Install with the following command:
-  ```
-  npm install --global HTMLHint
-  ```
- 
-    
-### Tools
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
- 
-  Settings: 
-  ``` 
-  "auto-rename-tag.activationOnLanguage": [
-          "html",
-          "xml"   
-  ],
-  ```
+These extensions are not included with the toolbox but can help your development. 
 
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+
 - [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
-- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
-- [TODO Parser](https://marketplace.visualstudio.com/items?itemName=minhthai.vscode-todo-parser)
-
-
-
